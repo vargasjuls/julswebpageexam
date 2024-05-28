@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+    padding-top: 70;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #83bdf4;
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box; 
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#home {
+    margin-top: 80px;
+    background-color: #f9f9f9;
+}
+
+#home .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#home .text-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+#home .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#featured-animals {
+    background-color: #f9f9f9;
+}
+
+#featured-animals .featured-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#featured-animals .text-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+#featured-animals .animal-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.animal {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    max-width: 300px;
+}
+.btn{
+    text-align: center;
+    
+}
+
+.animal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.animal-info {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+#adoption-form {
+    background-color: #f9f9f9;
+}
+
+#adoption-form .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#adoption-form .form-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+#adoption-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#adoption-form form label {
+    font-weight: bold;
+}
+
+#adoption-form form input[type="text"],
+#adoption-form form input[type="email"],
+#adoption-form form input[type="submit"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#adoption-form form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#adoption-form form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+#adoption-form .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+}
+
+#testimonials h1 {
+    font-size: 2rem;
+}
+
+#testimonials p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.testimonial-header img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-right: 1rem;
+}
+
+
+.testimonial-header .username {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.testimonial-header .dots {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.testimonial-text {
+    margin-top: 1rem;
+}
+
+#Adopting .form-content {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#Adopting .form-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+
+#Adopting {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#Adopting form label {
+    font-weight: bold;
+}
+
+#Adopting form input[type="account"]{
+    display: flex;
+    max-width: 500px;
+    width: 500%;
+    padding: 0.30rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#Adopting form input[type="firstname"], 
+#Adopting form input[type="lastname"],
+#Adopting form input[type="email"],
+#Adopting form input[type="numbah"],
+#Adopting form input[type="address"],
+#Adoptingform input[type="submit"] {
+    padding: 0.30rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#Adopting form input[type="submit"] {
+    padding: 0.30rem;
+    border-radius: 5px;
+}
+
+#Adopting form input[type="submit"] {
+    background-color: #000000;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#Adopting form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.available-animals{
+    display: flex;
+    margin: inherit;
+}
+#footer-banner {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #333;
+}
+
+#footer-banner .footer-content {
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+#footer-banner p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+.button{
+    background-color: black;
+}
+
+#available-animals form input[type="pet"] {
+    background-color: #000000;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#available-animals input[type="pet"]:hover {
+    background-color: #555;
+}
+.btn .nav_item{
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+#start-adopt form input[type="start"] {
+    padding: 0.30rem;
+    border-radius: 5px;
+}
+
+#start-adopt form input[type="start"] {
+    background-color: #000000;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#start-adopt form input[type="start"]:hover {
+    background-color: #555;
+}
+
+
+
+#adopt .adopt-content{
+    background-color: #707070;
+    padding: 200px;
+}
+
+.last{
+    text-align: center;
+    color: black;
+   
+}
